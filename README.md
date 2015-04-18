@@ -3,15 +3,6 @@ maven-js-formatter-plugin
 
 It is a maven plugin to format javascript code using JSBeautifier. 
 
-The code is developed using -
-
-1. https://github.com/beautify-web/js-beautify/blob/master/js/lib/beautify.js  (MIT license , jsbeautifier.org)
-
-2. https://code.google.com/p/maven-java-formatter-plugin/ - Apache License 2.0
-
-3. https://code.google.com/p/jsplugins/ - Apache License 2.0
-
-
 # Usage 
 Sample pom file 
 
@@ -46,3 +37,13 @@ Sample pom file
         		<project.build.jsSourceDirectory>${project.basedir}/src/main/webapp/scripts/app/view</project.build.jsSourceDirectory>
         	</properties>
 ```
+
+
+#Credits
+The code is developed using -
+
+1. https://github.com/beautify-web/js-beautify/blob/master/js/lib/beautify.js  (MIT license , jsbeautifier.org)
+
+2. https://code.google.com/p/maven-java-formatter-plugin/ - Apache License 2.0
+
+3. https://code.google.com/p/jsplugins/ - Apache License 2.0
