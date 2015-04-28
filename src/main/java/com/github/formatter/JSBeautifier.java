@@ -1,4 +1,4 @@
-package com.anuta.internal;
+package com.github.formatter;
 
 /*
  * Copyright 2001-2005 The Apache Software Foundation.
@@ -172,7 +172,7 @@ public class JSBeautifier extends AbstractMojo {
                     }
                 }
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new MojoExecutionException("Unable to find files using includes/excludes", e);
         }
 
