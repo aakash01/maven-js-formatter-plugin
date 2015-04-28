@@ -173,7 +173,7 @@ public class JSBeautifier extends AbstractMojo {
                 }
             }
         } catch (Exception e) {
-            throw new MojoExecutionException("Unable to find files using includes/excludes", e);
+            throw new MojoExecutionException("Unable to find files using includes/excludes. Please set correct property value for `project.build.jsSourceDirectory`", e);
         }
 
         int numberOfFiles = files.size();
