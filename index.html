@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Maven Formatter by aakash01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">JavaScript Maven Formatter</h1>
+      <h2 class="project-tagline">Compile time formatting of JS files using maven</h2>
+      <a href="https://github.com/aakash01/maven-js-formatter-plugin" class="btn">View on GitHub</a>
+      <a href="https://github.com/aakash01/maven-js-formatter-plugin/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/aakash01/maven-js-formatter-plugin/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="maven-js-formatter-plugin" class="anchor" href="#maven-js-formatter-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>maven-js-formatter-plugin</h1>
+
+<p>maven-js-formatter-plugin</p>
+
+<p>It is a maven plugin to format javascript code using JSBeautifier. </p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>Sample pom file </p>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">plugin</span>&gt;
+                &lt;<span class="pl-ent">groupId</span>&gt;com.github.maven-js-formatter-plugin&lt;/<span class="pl-ent">groupId</span>&gt;
+                &lt;<span class="pl-ent">artifactId</span>&gt;maven-js-formatter-plugin&lt;/<span class="pl-ent">artifactId</span>&gt;
+                &lt;<span class="pl-ent">version</span>&gt;0.1&lt;/<span class="pl-ent">version</span>&gt;
+                &lt;<span class="pl-ent">dependencies</span>&gt;
+                    &lt;<span class="pl-ent">dependency</span>&gt;
+                        &lt;<span class="pl-ent">groupId</span>&gt;org.apache.maven&lt;/<span class="pl-ent">groupId</span>&gt;
+                        &lt;<span class="pl-ent">artifactId</span>&gt;maven-plugin-api&lt;/<span class="pl-ent">artifactId</span>&gt;
+                        &lt;<span class="pl-ent">version</span>&gt;2.0&lt;/<span class="pl-ent">version</span>&gt;
+                    &lt;/<span class="pl-ent">dependency</span>&gt;
+                &lt;/<span class="pl-ent">dependencies</span>&gt;
+                &lt;<span class="pl-ent">executions</span>&gt;
+                    &lt;<span class="pl-ent">execution</span>&gt;
+                        &lt;<span class="pl-ent">phase</span>&gt;compile&lt;/<span class="pl-ent">phase</span>&gt;
+                        &lt;<span class="pl-ent">goals</span>&gt;
+                            &lt;<span class="pl-ent">goal</span>&gt;format&lt;/<span class="pl-ent">goal</span>&gt;
+                        &lt;/<span class="pl-ent">goals</span>&gt;
+                        &lt;<span class="pl-ent">configuration</span>&gt;
+                            &lt;<span class="pl-ent">directories</span>&gt;
+                                &lt;<span class="pl-ent">param</span>&gt;${project.build.jsSourceDirectory}&lt;/<span class="pl-ent">param</span>&gt;
+                            &lt;/<span class="pl-ent">directories</span>&gt;
+                        &lt;/<span class="pl-ent">configuration</span>&gt;
+                    &lt;/<span class="pl-ent">execution</span>&gt;
+                &lt;/<span class="pl-ent">executions</span>&gt;
+            &lt;/<span class="pl-ent">plugin</span>&gt;
+
+        &lt;<span class="pl-ent">properties</span>&gt;
+                &lt;<span class="pl-ent">project</span>.build.jsSourceDirectory&gt;${project.basedir}/src/main/webapp/scripts/app/view&lt;/<span class="pl-ent">project</span>.build.jsSourceDirectory&gt;
+            &lt;/<span class="pl-ent">properties</span>&gt;</pre></div>
+
+<h1>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h1>
+
+<p>The code is developed using -</p>
+
+<ol>
+<li><p><a href="https://github.com/beautify-web/js-beautify/blob/master/js/lib/beautify.js">https://github.com/beautify-web/js-beautify/blob/master/js/lib/beautify.js</a>  (MIT license , jsbeautifier.org)</p></li>
+<li><p><a href="https://code.google.com/p/maven-java-formatter-plugin/">https://code.google.com/p/maven-java-formatter-plugin/</a> - Apache License 2.0</p></li>
+<li><p><a href="https://code.google.com/p/jsplugins/">https://code.google.com/p/jsplugins/</a> - Apache License 2.0</p></li>
+</ol>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/aakash01/maven-js-formatter-plugin">JavaScript Maven Formatter</a> is maintained by <a href="https://github.com/aakash01">aakash01</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-71867645-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
